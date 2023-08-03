@@ -1,7 +1,7 @@
 public class NetworkReader {
     private String url;
 
-    NetworkWriter(String url) {
+    NetworkReader(String url) {
         this.url = url
     }
 
@@ -12,8 +12,8 @@ public class NetworkReader {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        InputStreamReader reader = new InputStreamReader(in);
         StringBuilder inputString1 = new StringBuilder();
-        Sytring data;
         try {
             int c;
             c = reader.read();
