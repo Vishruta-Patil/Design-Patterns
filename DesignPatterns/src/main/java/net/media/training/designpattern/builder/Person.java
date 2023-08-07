@@ -49,12 +49,12 @@ public class Person {
 
         public PersonBuilder setCity(String city) {
             this.city = city;
-            return city;
+            return this;
         }
 
         public PersonBuilder setCountry(String country) {
             this.country = country;
-            return country;
+            return this;
         }
 
         public Person build () {
